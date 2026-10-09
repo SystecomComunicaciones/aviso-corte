@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Servicio suspendido - SYSTECOM</title>
+<style>
+  :root {
+    --ink: #12222b;
+    --paper: #eef3f4;
+    --teal: #0e6b6b;
+    --amber: #f2b33d;
+    --slate: #4a5b66;
+    --line: #c9d6da;
+    --btn-text: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e8f0f2;
+      --paper: #0f1b21;
+      --teal: #5fc1bd;
+      --slate: #a5b6bf;
+      --line: #2a3d46;
+      --btn-text: #0f1b21;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.55;
+    padding: max(1.5rem, env(safe-area-inset-top)) 1.25rem max(2rem, env(safe-area-inset-bottom));
+  }
+  main { max-width: 34rem; margin: 0 auto; }
+  .pause { width: 4.5rem; height: 4.5rem; display: block; margin-bottom: 1.75rem; }
+  h1 {
+    font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(2rem, 8vw, 2.9rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+  }
+  .lead { font-size: 1.1rem; color: var(--slate); margin: 0 0 2rem; max-width: 30rem; }
+  h2 { font-size: 1.05rem; margin: 0 0 0.75rem; }
+  ol { margin: 0 0 2rem; padding-left: 1.4rem; max-width: 30rem; }
+  li { margin-bottom: 0.5rem; padding-left: 0.2rem; }
+  .actions { display: grid; gap: 0.75rem; margin-bottom: 0.75rem; }
+  a.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 0.95rem 1.25rem;
+    border-radius: 0.6rem;
+    border: 2px solid var(--teal);
+  }
+  a.primary { background: var(--teal); color: var(--btn-text); }
+  a.secondary { background: transparent; color: var(--teal); }
+  a.btn:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+  .note { font-size: 0.92rem; color: var(--slate); margin: 0 0 2.5rem; max-width: 30rem; }
+  footer { border-top: 1px solid var(--line); padding-top: 1rem; font-size: 0.92rem; color: var(--slate); }
+  footer strong { color: var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <svg class="pause" viewBox="0 0 72 72" role="img" aria-label="Servicio en pausa">
+    <rect width="72" height="72" rx="16" fill="#12222b"/>
+    <rect x="22" y="18" width="10" height="36" rx="3" fill="#f2b33d"/>
+    <rect x="40" y="18" width="10" height="36" rx="3" fill="#f2b33d"/>
+  </svg>
+
+  <h1>Tu servicio de internet está suspendido</h1>
+  <p class="lead">Tenemos registrado un pago pendiente en tu cuenta. En cuanto lo regularices, volvemos a activar tu servicio.</p>
+
+  <h2>Qué hacer</h2>
+  <ol>
+    <li>Llámanos o escríbenos para confirmar tu saldo y los medios de pago.</li>
+    <li>Realiza el pago.</li>
+    <li>Avísanos con tu comprobante y reactivamos tu servicio.</li>
+  </ol>
+
+  <div class="actions">
+    <a class="btn primary" href="tel:+573155743006">Llamar al 315 574 3006</a>
+    <a class="btn secondary" href="https://wa.me/573155743006">Escribir por WhatsApp</a>
+  </div>
+  <p class="note">El enlace de WhatsApp solo abre con datos móviles, porque tu conexión de internet está suspendida.</p>
+
+  <footer>
+    <strong>SYSTECOM Internet &amp; Telecomunicaciones</strong><br>
+    La Cruz, Nariño
+  </footer>
+</main>
+</body>
+</html>
